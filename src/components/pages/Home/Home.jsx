@@ -1,8 +1,20 @@
 import React from 'react'
+import '../../../App.css'
+import LeftSidebar from '../../LeftSidebar/LeftSidebar'
+import RightSidebar from '../../RightSidebar/RightSidebar'
+import HomeMainbar from '../../HomeMainbar/HomeMainbar'
 
 const Home = () => {
   return (
-    <div><h1>hi</h1></div>
+    <div className='home-container-1'>
+      <LeftSidebar />
+
+      <div className='home-container-2'>
+        <HomeMainbar />
+        <RightSidebar />
+      </div>
+
+    </div>
   )
 }
 
